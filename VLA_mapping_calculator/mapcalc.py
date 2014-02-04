@@ -127,8 +127,9 @@ def VLA_H2CO_CMZ():
     M2 = MappingObservation(53*u.arcmin,11*u.arcmin,
                             14.488*u.GHz,
                             pointing_center=coordinates.Galactic(0.293*u.deg,-0.058*u.deg),
-                            integration_time_per_beam=15*u.min,
-                            overhead_per_beam=13.35*u.min)
+                            integration_time_per_beam=8.5*u.min,
+                            overhead_per_beam=7.5*u.min)
+    print "Ku-band"
     print "Total time: ",M2.total_time.to(u.hour)
     print "Total time ON: ",M2.total_time_onsource.to(u.hour)
     ptgs = M2.hex_pointings
